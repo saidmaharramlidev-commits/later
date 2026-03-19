@@ -1,0 +1,117 @@
+#mainField {
+    width: 70%;
+    margin: 0 auto;
+    justify-self: center;
+    text-align: center;
+    color: #EAEAEA;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mainField h1 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #CFCFCF;
+    letter-spacing: 0.5px;
+}
+
+#fields-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 22px;
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+    backdrop-filter: blur(10px);
+}
+
+
+.field:hover {
+    transform: translateY(-4px) scale(1.02);
+
+    border: 1px solid rgba(12, 171, 179, 0.5);
+
+    box-shadow:
+        0 0 20px rgba(12, 171, 179, 0.2),
+        0 0 40px rgba(255, 140, 60, 0.1);
+}
+
+
+.field span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #DADADA;
+}
+
+
+
+
+.icon-field {
+    font-size: 24px;
+
+    background: linear-gradient(135deg, #0CABb3, #FF8C3C);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    transition: transform 0.25s ease;
+}
+
+.icon-field:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+
+
+#ctaOfField {
+    margin-top: 40px;
+    color: #8A8A8A;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+#ctaOfField:hover {
+    color: #FFFFFF;
+    transform: translateX(-5px);
+}
+
+.field:last-child {
+    grid-column: span 2;
+}
+
+
+
+@media(max-width:700px) {
+    #mainField {
+        width: 90%;
+    }
+
+}
+
+@media(max-width:551px) {
+    #fields-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainField h1 {
+        font-size: 22px;
+    }
+
+}
