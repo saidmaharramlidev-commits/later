@@ -1,0 +1,1 @@
+export type FieldKey = 'skills' | 'health' | 'money' | 'career' | 'growth';

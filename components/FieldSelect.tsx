@@ -52,7 +52,7 @@ function FieldSelect() {
                 </div>
                 <div className="field" onClick={() => {
                     dispatch(setStep('topic'))
-                    dispatch(setField('grpwth'))
+                    dispatch(setField('growth'))
                 }}>
                     <span>Personal Growth</span>
                     <GiGrowth className="icon-field" />
@@ -61,7 +61,7 @@ function FieldSelect() {
 
             </div>
 
-            <div id="ctaOfField" onClick={() => dispatch(setStep('home'))}>{'< Back'}</div>
+            <div className="ctaOfField" onClick={() => dispatch(setStep('home'))}>{'< Back'}</div>
 
         </div>
     )

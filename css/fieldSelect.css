@@ -78,7 +78,7 @@
 
 
 
-#ctaOfField {
+.ctaOfField {
     margin-top: 40px;
     color: #8A8A8A;
     cursor: pointer;
@@ -86,7 +86,7 @@
     transition: all 0.2s ease;
 }
 
-#ctaOfField:hover {
+.ctaOfField:hover {
     color: #FFFFFF;
     transform: translateX(-5px);
 }
