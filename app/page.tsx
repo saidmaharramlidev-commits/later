@@ -5,6 +5,8 @@
 import FieldSelect from "@/components/FieldSelect";
 import HomeView from "@/components/HomeView";
 import TopicSelect from "@/components/TopicSelect";
+import WhenStart from "@/components/WhenStart";
+import Why from "@/components/Why";
 import { RootState } from "@/redux/store";
 import { useSelector } from "react-redux";
 
@@ -23,6 +25,8 @@ export default function Home() {
       {step === 'home' && <HomeView />}
       {step === 'field' && <FieldSelect />}
       {step === 'topic' && <TopicSelect />}
+      {step === 'when' && <WhenStart />}
+      {step === 'whyStart' && <Why />}
 
 
     </div>

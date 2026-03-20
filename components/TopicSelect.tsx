@@ -92,7 +92,7 @@ function TopicSelect() {
                 {
                     topics.map((topic) => (
                         <div key={topic.id} className="topic" onClick={() => {
-                            dispatch(setStep('whenStart'))
+                            dispatch(setStep('when'))
                             dispatch(setTopic(topic.name))
                         }}>
                             <p>{topic.name}</p>

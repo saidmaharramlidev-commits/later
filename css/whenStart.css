@@ -1,15 +1,15 @@
-#mainTopic {
+#mainWhen {
     width: 70%;
+    height: 100%;
     justify-self: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-
-#mainTopic h1 {
+#mainWhen h1 {
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 50px;
@@ -17,7 +17,9 @@
     letter-spacing: 0.5px;
 }
 
-#mainTopic span {
+
+#mainWhen span {
+    width: 250px;
     display: inline-block;
     font-size: 1.2rem;
     color: #555;
@@ -29,25 +31,26 @@
     transition: all 0.3s ease;
 }
 
-#mainTopic span:hover {
+#mainWhen span:hover {
     background-color: rgba(12, 171, 179, 0.2);
     color: #0cabB3;
     cursor: default;
 }
 
 
-#topics-wrapper {
-    margin-top: 40px;
+#times-wrapper {
+    margin-top: 30px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
-    gap: 20px;
+    gap: 10px;
+
 }
 
 
-
-.topic {
+.time {
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,8 +66,7 @@
     backdrop-filter: blur(10px);
 }
 
-
-.topic:hover {
+.time:hover {
     transform: translateY(-4px) scale(1.02);
 
     border: 1px solid rgba(12, 171, 179, 0.5);
@@ -75,48 +77,38 @@
 }
 
 
-.topic p {
+.time p {
     font-size: 16px;
     font-weight: 500;
     color: #DADADA;
 }
 
-@media(max-width:900px) {
-    #mainTopic {
+
+@media(max-width:800px) {
+
+    #mainWhen {
         width: 90%;
     }
-}
 
 
-@media(max-width:700px) {
-    .topic {
-        padding: 4px 14px;
+
+    .time {
+        width: 100%;
+        padding: 6px 18px;
     }
 }
-
-@media(max-width:500px) {
-    .topic {
-        padding: 2px 8px;
-    }
-
-    .topic p {
-        font-size: 12px;
-    }
-
-    #mainTopic h1 {
-        font-size: 22px;
-    }
-}
-
 
 @media(max-width:400px) {
 
-    #mainTopic h1 {
-        font-size: 18px;
+    #mainWhen h1 {
+        font-size: 1.3rem;
     }
 
-    .topic p {
-        font-size: 10px;
+
+
+    #mainWhen span {
+        width: 200px;
+        font-size: 0.9rem;
     }
 
 }
