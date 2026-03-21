@@ -1,1 +1,1 @@
-export type FieldKey = 'skills' | 'health' | 'money' | 'career' | 'growth';
+export type FieldKey = 'Skills' | 'Health' | 'Money' | 'Career' | 'Growth';

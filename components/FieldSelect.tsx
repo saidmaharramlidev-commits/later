@@ -24,35 +24,35 @@ function FieldSelect() {
             <div id="fields-wrapper">
                 <div className="field" onClick={() => {
                     dispatch(setStep('topic'))
-                    dispatch(setField('skills'))
+                    dispatch(setField('Skills'))
                 }}>
                     <span>Skills & Learning</span>
                     <GiSkills className="icon-field" />
                 </div>
                 <div className="field" onClick={() => {
                     dispatch(setStep('topic'))
-                    dispatch(setField('health'))
+                    dispatch(setField('Health'))
                 }}>
                     <span>Health & Fitness</span>
                     <IoIosFitness className="icon-field" />
                 </div>
                 <div className="field" onClick={() => {
                     dispatch(setStep('topic'))
-                    dispatch(setField('money'))
+                    dispatch(setField('Money'))
                 }}>
                     <span>Money & Saving</span>
                     <LuBriefcaseBusiness className="icon-field" />
                 </div>
                 <div className="field" onClick={() => {
                     dispatch(setStep('topic'))
-                    dispatch(setField('career'))
+                    dispatch(setField('Career'))
                 }}>
                     <span>Career & Work</span>
                     <GrUserWorker className="icon-field" />
                 </div>
                 <div className="field" onClick={() => {
                     dispatch(setStep('topic'))
-                    dispatch(setField('growth'))
+                    dispatch(setField('Growth'))
                 }}>
                     <span>Personal Growth</span>
                     <GiGrowth className="icon-field" />

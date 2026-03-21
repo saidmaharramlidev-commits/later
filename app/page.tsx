@@ -4,6 +4,8 @@
 
 import FieldSelect from "@/components/FieldSelect";
 import HomeView from "@/components/HomeView";
+import LoadingScreen from "@/components/LoadingScreen";
+import Results from "@/components/Results";
 import TopicSelect from "@/components/TopicSelect";
 import WhenStart from "@/components/WhenStart";
 import Why from "@/components/Why";
@@ -14,7 +16,7 @@ export default function Home() {
 
 
 
-  const { step } = useSelector((state: RootState) => state.counter)
+  const { step, loading } = useSelector((state: RootState) => state.counter)
 
 
 
@@ -27,6 +29,9 @@ export default function Home() {
       {step === 'topic' && <TopicSelect />}
       {step === 'when' && <WhenStart />}
       {step === 'whyStart' && <Why />}
+      {loading === true && <LoadingScreen />}
+      {step === 'results' && <Results />}
+
 
 
     </div>

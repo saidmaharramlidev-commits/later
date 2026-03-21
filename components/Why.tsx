@@ -1,6 +1,6 @@
 'use client'
 
-import { setStep, setWhy } from "@/redux/counterSlice"
+import { setLoading, setStep, setWhy } from "@/redux/counterSlice"
 import { RootState } from "@/redux/store"
 import { useDispatch, useSelector } from "react-redux"
 
@@ -40,23 +40,56 @@ function Why() {
             <div id="excuses-wrapper">
                 <div className="excuse" onClick={() => {
                     (dispatch(setStep('loading')))
+                    dispatch(setLoading(true))
                     dispatch(setWhy('Environment'))
+
+                    setTimeout(() => {
+                        dispatch(setLoading(false))
+                        dispatch(setStep('results'))
+
+                    }, 5000)
                 }}><p>Environment doesn't let it happen</p></div>
                 <div className="excuse" onClick={() => {
                     (dispatch(setStep('loading')))
+                    dispatch(setLoading(true))
                     dispatch(setWhy('Time'))
+
+                    setTimeout(() => {
+                        dispatch(setLoading(false))
+                        dispatch(setStep('results'))
+
+                    }, 5000)
                 }}><p>I don’t have enough time</p></div>
                 <div className="excuse" onClick={() => {
                     (dispatch(setStep('loading')))
+                    dispatch(setLoading(true))
                     dispatch(setWhy('Where'))
+
+                    setTimeout(() => {
+                        dispatch(setLoading(false))
+                        dispatch(setStep('results'))
+
+                    }, 5000)
                 }}><p>I don’t know where to start</p></div>
                 <div className="excuse" onClick={() => {
                     (dispatch(setStep('loading')))
+                    dispatch(setLoading(true))
                     dispatch(setWhy('Money'))
+                    setTimeout(() => {
+                        dispatch(setLoading(false))
+                        dispatch(setStep('results'))
+
+                    }, 5000)
                 }}><p>I don't have enough money</p></div>
                 <div className="excuse" onClick={() => {
                     (dispatch(setStep('loading')))
+                    dispatch(setLoading(true))
                     dispatch(setWhy('Delay'))
+                    setTimeout(() => {
+                        dispatch(setLoading(false))
+                        dispatch(setStep('results'))
+
+                    }, 5000)
                 }}><p>I delay it always</p></div>
 
             </div>

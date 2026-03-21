@@ -1,0 +1,171 @@
+#mainResults {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#mainResults::-webkit-scrollbar {
+    width: 3px;
+}
+
+#mainResults::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 5px;
+}
+
+#mainResults::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 5px;
+}
+
+#mainResults::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+
+
+#headerResults {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+
+
+#topDiv-results {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+
+
+
+.advice-card {
+    background: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    width: 300px;
+    border-top: 1px solid rgba(12, 171, 179, 0.6);
+    border-left: 1px solid rgba(12, 171, 179, 0.6);
+    border-right: 1px solid rgba(238, 110, 44, 0.6);
+    border-bottom: 1px solid rgba(238, 110, 44, 0.6);
+}
+
+/* Hover effect for interaction */
+.advice-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+.advice-card p {
+    font-size: 1.2rem;
+}
+
+
+
+#statistics-wrapper {
+    margin-top: 80px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.labelOfStatistics {
+    color: white;
+    text-align: left;
+}
+
+.statistic-div {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #1f1f1f;
+    border-top: 1px solid rgba(12, 171, 179, 0.6);
+    border-left: 1px solid rgba(12, 171, 179, 0.6);
+    border-right: 1px solid rgba(238, 110, 44, 0.6);
+    border-bottom: 1px solid rgba(238, 110, 44, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px) {
+    .advice-card {
+        width: 250px;
+    }
+
+    #topDiv-results {
+        gap: 10px;
+    }
+}
+
+@media(max-width:1000px) {
+    .advice-card {
+        width: 200px;
+    }
+
+
+}
+
+@media(max-width:800px) {
+    #topDiv-results {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .advice-card {
+        width: 80%;
+        justify-content: center;
+        height: 90px;
+    }
+
+    .advice-card p {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media(max-width:400px) {
+    #headerResults {
+        font-size: 2rem;
+    }
+
+}

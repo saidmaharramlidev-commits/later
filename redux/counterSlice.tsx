@@ -7,6 +7,7 @@ export interface CounterState {
     topic: string
     when: number
     why: string
+    loading: boolean
 }
 
 const initialState: CounterState = {
@@ -14,7 +15,8 @@ const initialState: CounterState = {
     field: '',
     topic: '',
     when: 0,
-    why: 'empty'
+    why: 'empty',
+    loading: false
 }
 
 export const counterSlice = createSlice({
@@ -38,11 +40,14 @@ export const counterSlice = createSlice({
         },
         setWhy: (state, action: PayloadAction<string>) => {
             state.why = action.payload
-        }
+        },
+        setLoading: (state, action: PayloadAction<boolean>) => {
+            state.loading = action.payload
 
-    },
+        },
+    }
 })
 
-export const { setStep, setField, setTopic, setWhen, setWhy } = counterSlice.actions
+export const { setStep, setField, setTopic, setWhen, setWhy, setLoading } = counterSlice.actions
 
 export default counterSlice.reducer

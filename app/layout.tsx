@@ -12,7 +12,7 @@ import '@/css/fieldSelect.css'
 import "@/css/topicSelect.css"
 import '@/css/whenStart.css'
 import '@/css/whyStart.css'
-
+import '@/css/results.css'
 
 
 const metadata: Metadata = {

@@ -4,65 +4,65 @@ import { useDispatch, useSelector } from "react-redux"
 
 
 export const fieldTopics = {
-    skills: [
-        { id: 1, name: "Learning a Language", description: "Start now and fluency comes faster." },
-        { id: 2, name: "Playing an Instrument", description: "Pick up a guitar or piano today." },
-        { id: 3, name: "Drawing or Painting", description: "Express creativity from day one." },
-        { id: 4, name: "Writing a Journal", description: "Document thoughts and ideas immediately." },
-        { id: 5, name: "Public Speaking Practice", description: "Start small to gain confidence." },
-        { id: 6, name: "Coding Projects", description: "Build small projects today and learn faster." },
-        { id: 7, name: "Photography", description: "Start taking photos and improve skills instantly." },
-        { id: 8, name: "Cooking New Recipes", description: "Experiment in the kitchen today." },
-        { id: 9, name: "Learning Magic Tricks", description: "Start impressing people immediately." },
-        { id: 10, name: "Building a Personal Blog", description: "Share your thoughts and projects today." }
+    Skills: [
+        { id: 'language', name: "Learning a Language" },
+        { id: 'instrument', name: "Playing an Instrument" },
+        { id: 'drawing', name: "Drawing or Painting" },
+        { id: 'journal', name: "Writing a Journal" },
+        { id: "speaking", name: "Public Speaking Practice" },
+        { id: "projects", name: "Coding Projects" },
+        { id: "photography", name: "Photography" },
+        { id: "cooking", name: "Cooking New Recipes" },
+        { id: "magic", name: "Learning Magic Tricks", },
+        { id: "blog", name: "Building a Personal Blog" }
     ],
-    health: [
-        { id: 1, name: "Morning Walks", description: "Start moving now for long-term health." },
-        { id: 2, name: "Yoga Sessions", description: "Improve flexibility starting today." },
-        { id: 3, name: "Home Workouts", description: "Get stronger without leaving home." },
-        { id: 4, name: "Healthy Cooking", description: "Eat better from today onward." },
-        { id: 5, name: "Meditation", description: "Calm your mind starting now." },
-        { id: 6, name: "Stretching Routine", description: "Prevent stiffness with daily stretches." },
-        { id: 7, name: "Drinking More Water", description: "Hydrate now for better energy." },
-        { id: 8, name: "Sleep Routine", description: "Start going to bed on time tonight." },
-        { id: 9, name: "Cycling", description: "Hop on a bike and move immediately." },
-        { id: 10, name: "Home Cardio", description: "Boost fitness with simple exercises today." }
+    Health: [
+        { id: 'walks', name: "Morning Walks", },
+        { id: 'yoga', name: "Yoga Sessions", },
+        { id: 'workouts', name: "Home Workouts", },
+        { id: 'healthy', name: "Healthy Cooking", },
+        { id: 'meditation', name: "Meditation", },
+        { id: 'stretching', name: "Stretching Routine" },
+        { id: 'water', name: "Drinking More Water" },
+        { id: 'sleep', name: "Sleep Routine" },
+        { id: 'cycling', name: "Cycling", },
+        { id: 'cardio', name: "Home Cardio", }
     ],
-    money: [
-        { id: 1, name: "Start Saving", description: "Even a small amount today matters." },
-        { id: 2, name: "Track Expenses", description: "Know where your money goes immediately." },
-        { id: 3, name: "Set a Budget", description: "Plan spending and control finances today." },
-        { id: 4, name: "Sell Unused Items", description: "Make extra money starting now." },
-        { id: 5, name: "Open a Savings Account", description: "Start storing money safely today." },
-        { id: 6, name: "Start a Side Hustle", description: "Pick a small project and earn fast." },
-        { id: 7, name: "Learn About Investments", description: "Research today to earn tomorrow." },
-        { id: 8, name: "Create an Emergency Fund", description: "Start saving for the unexpected." },
-        { id: 9, name: "Budget Meal Planning", description: "Save money while eating better." },
-        { id: 10, name: "Use Cashback Apps", description: "Start saving instantly on purchases." }
+    Money: [
+        { id: 'saving', name: "Start Saving" },
+        { id: 'expenses', name: "Track Expenses" },
+        { id: 'budget', name: "Set a Budget", },
+        { id: 'unused', name: "Sell Unused Items" },
+        { id: 'account', name: "Open a Savings Account" },
+        { id: 'hustle', name: "Start a Side Hustle" },
+        { id: 'inverstments', name: "Learn About Investarn" },
+        { id: 'fund', name: "Create an Emergency Fund" },
+        { id: 'meal', name: "Budget Meal Planning", },
+        { id: 'cashback', name: "Use Cashback Apps", }
     ],
-    career: [
-        { id: 1, name: "Update Resume", description: "Make your profile ready today." },
-        { id: 2, name: "Apply for Jobs", description: "Even one application counts now." },
-        { id: 3, name: "Build Portfolio", description: "Showcase your work starting today." },
-        { id: 4, name: "Freelancing", description: "Start small gigs immediately." },
-        { id: 5, name: "Networking Online", description: "Connect with people today." },
-        { id: 6, name: "LinkedIn Profile", description: "Set up a profile for opportunities." },
-        { id: 7, name: "Learn a Work Tool", description: "Pick Excel, Figma, or others today." },
-        { id: 8, name: "Attend Webinars", description: "Gain knowledge starting now." },
-        { id: 9, name: "Volunteer Projects", description: "Get experience immediately." },
-        { id: 10, name: "Side Projects", description: "Start building something small today." }
+    Career: [
+        { id: 'resume', name: "Update Resume" },
+        { id: 'apply', name: "Apply for Jobs" },
+        { id: 'portfolio', name: "Build Portfolio" },
+        { id: 'freelancing', name: "Freelancing" },
+        { id: 'networking', name: "Networking Online" },
+        { id: 'linkedin', name: "LinkedIn Profile" },
+        { id: 'tool', name: "Learn a Work Tool", },
+        { id: 'webinars', name: "Attend Webinars", },
+        { id: 'volunteer', name: "Volunteer Projects" },
+        { id: 'side', name: "Side Projects", }
     ],
-    growth: [
-        { id: 1, name: "Read a Book", description: "Start your personal growth today." },
-        { id: 2, name: "Daily Journaling", description: "Reflect and improve from now." },
-        { id: 3, name: "Set Daily Goals", description: "Even small steps today matter." },
-        { id: 4, name: "Meditation", description: "Develop calm and focus instantly." },
-        { id: 5, name: "Learn New Hobby", description: "Pick up painting, music, or sport today." },
-        { id: 6, name: "Declutter Space", description: "Organize your environment now." },
-        { id: 7, name: "Try a Challenge", description: "Push your limits starting today." },
-        { id: 8, name: "Reflect on Achievements", description: "See progress and plan next steps." },
-        { id: 9, name: "Practice Gratitude", description: "Write 3 things today to improve mindset." },
-        { id: 10, name: "Digital Detox", description: "Take a break from screens today." }
+    Growth: [
+        { id: 'book', name: "Read a Book" },
+        { id: 'daily', name: "Daily Journaling" },
+        { id: 'goals', name: "Set Daily Goals" },
+        { id: 'meditation', name: "Meditation" },
+        { id: 'hobby', name: "Learn New Hobby" },
+        { id: 'space', name: "Declutter Space" },
+        { id: 'challange', name: "Try a Challenge" },
+        { id: 'achivements', name: "Reflect on Achievements" },
+        { id: 'gratitude', name: "Practice Gratitude" },
+        { id: 'detox', name: "Digital Detox" }
     ]
 };
 
@@ -80,11 +80,11 @@ function TopicSelect() {
         <div id="mainTopic">
             <h1>Select your topic to continue →</h1>
             <span>(
-                {field === 'skills' ? "Skills & Learning" : ''}
-                {field === 'health' ? "Health & Fitness" : ''}
-                {field === 'money' ? "Money & Saving" : ''}
-                {field === 'career' ? "Career & Work" : ''}
-                {field === 'growth' ? "Personal Growth" : ''} )
+                {field === 'Skills' ? "Skills & Learning" : ''}
+                {field === 'Health' ? "Health & Fitness" : ''}
+                {field === 'Money' ? "Money & Saving" : ''}
+                {field === 'Career' ? "Career & Work" : ''}
+                {field === 'Growth' ? "Personal Growth" : ''} )
             </span>
 
 
