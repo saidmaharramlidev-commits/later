@@ -1,4 +1,4 @@
-import { setStep, setTopic } from "@/redux/counterSlice";
+import { setStep, setTopic, setTopicName } from "@/redux/counterSlice";
 import { RootState } from "@/redux/store"
 import { useDispatch, useSelector } from "react-redux"
 
@@ -93,7 +93,8 @@ function TopicSelect() {
                     topics.map((topic) => (
                         <div key={topic.id} className="topic" onClick={() => {
                             dispatch(setStep('when'))
-                            dispatch(setTopic(topic.name))
+                            dispatch(setTopic(topic.id))
+                            dispatch(setTopicName(topic.name))
                         }}>
                             <p>{topic.name}</p>
 

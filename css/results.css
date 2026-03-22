@@ -84,6 +84,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------STATISTIC DIVS----------------------------------------------------*/
+
+
+
+
+
 #statistics-wrapper {
     margin-top: 80px;
     width: 90%;
@@ -104,10 +120,184 @@
     height: 200px;
     border-radius: 15px;
     background-color: #1f1f1f;
+    overflow-x: scroll;
+    overflow-y: hidden;
     border-top: 1px solid rgba(12, 171, 179, 0.6);
     border-left: 1px solid rgba(12, 171, 179, 0.6);
     border-right: 1px solid rgba(238, 110, 44, 0.6);
     border-bottom: 1px solid rgba(238, 110, 44, 0.6);
+}
+
+.statistic-div::-webkit-scrollbar {
+    width: 1px;
+    height: 5px;
+}
+
+.statistic-div::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 5px;
+}
+
+.statistic-div::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 5px;
+}
+
+.statistic-div::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+
+.time-wrapper-results {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.time-endpoints {
+    width: 260px;
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+    border-bottom: 1px solid gray
+}
+
+.border-right {
+    border-right: 1px solid gray;
+}
+
+
+
+.wastedfirst {
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+
+}
+
+
+.wasted {
+    background: red;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+.wastedEndpointfirst {
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wastedEndpointfirst h2 {
+    rotate: calc(20deg);
+}
+
+
+.wastedEndpoint {
+    background: red;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.wastedEndpoint h2 {
+    rotate: calc(20deg);
+}
+
+
+.achivements-wrapper {
+    width: max-content;
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+.achivement {
+    width: 260px;
+    height: 91%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+
+.achivement-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-top: 1px solid rgba(12, 171, 179, 0.6);
+    border-left: 1px solid rgba(12, 171, 179, 0.6);
+    border-right: 1px solid rgba(238, 110, 44, 0.6);
+    border-bottom: 1px solid rgba(238, 110, 44, 0.6);
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    /* smooth transition for hover effects */
+    cursor: pointer;
+    /* makes it feel interactive */
+}
+
+.achivement-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(12, 171, 179, 0.3), 0 8px 20px rgba(238, 110, 44, 0.2);
+    border-top-color: rgba(238, 110, 44, 0.8);
+    border-left-color: rgba(238, 110, 44, 0.8);
+    border-right-color: rgba(12, 171, 179, 0.8);
+    border-bottom-color: rgba(12, 171, 179, 0.8);
+    background-color: rgba(12, 171, 179, 0.05);
+}
+
+
+.arrow {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 0;
+}
+
+
+
+
+
+.last-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+
+}
+
+.last-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px white;
 }
 
 
@@ -117,6 +307,11 @@
 
 
 
+
+
+
+
+/*------------------------------------------------------MEDIA------------------------------------------------------------------*/
 
 
 
@@ -141,6 +336,7 @@
     }
 
 
+
 }
 
 @media(max-width:800px) {
@@ -159,6 +355,7 @@
     .advice-card p {
         font-size: 1rem;
     }
+
 
 
 }

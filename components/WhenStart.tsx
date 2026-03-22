@@ -26,31 +26,31 @@ function WhenStart() {
             <div id="times-wrapper">
                 <div className="time" onClick={() => {
                     dispatch(setStep('whyStart'))
-                    dispatch(setWhen(1))
+                    dispatch(setWhen(0))
                 }}>
                     <p>Tomorrow</p>
                 </div>
                 <div className="time" onClick={() => {
                     dispatch(setStep('whyStart'))
-                    dispatch(setWhen(2))
+                    dispatch(setWhen(1))
                 }}>
                     <p>1 week later</p>
                 </div>
                 <div className="time" onClick={() => {
                     dispatch(setStep('whyStart'))
-                    dispatch(setWhen(3))
+                    dispatch(setWhen(2))
                 }}>
                     <p>1 month later</p>
                 </div>
                 <div className="time" onClick={() => {
                     dispatch(setStep('whyStart'))
-                    dispatch(setWhen(4))
+                    dispatch(setWhen(3))
                 }}>
                     <p>3 months later</p>
                 </div>
                 <div className="time" onClick={() => {
                     dispatch(setStep('whyStart'))
-                    dispatch(setWhen(5))
+                    dispatch(setWhen(4))
                 }}>
                     <p>After New year</p>
                 </div>

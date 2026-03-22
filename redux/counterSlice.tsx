@@ -1,12 +1,13 @@
-import { FieldKey } from '@/types/types'
+import { FieldKey, WhyType } from '@/types/types'
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export interface CounterState {
     step: string
     field: FieldKey | ''
     topic: string
+    topicName: string
     when: number
-    why: string
+    why: WhyType
     loading: boolean
 }
 
@@ -14,8 +15,9 @@ const initialState: CounterState = {
     step: 'home',
     field: '',
     topic: '',
+    topicName: '',
     when: 0,
-    why: 'empty',
+    why: 'Environment',
     loading: false
 }
 
@@ -38,16 +40,20 @@ export const counterSlice = createSlice({
         setWhen: (state, action: PayloadAction<number>) => {
             state.when = action.payload
         },
-        setWhy: (state, action: PayloadAction<string>) => {
+        setWhy: (state, action: PayloadAction<WhyType>) => {
             state.why = action.payload
         },
         setLoading: (state, action: PayloadAction<boolean>) => {
             state.loading = action.payload
 
         },
+        setTopicName: (state, action: PayloadAction<string>) => {
+            state.topicName = action.payload
+
+        },
     }
 })
 
-export const { setStep, setField, setTopic, setWhen, setWhy, setLoading } = counterSlice.actions
+export const { setStep, setField, setTopic, setWhen, setWhy, setLoading, setTopicName } = counterSlice.actions
 
 export default counterSlice.reducer
