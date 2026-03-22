@@ -25,7 +25,7 @@ function Results() {
     const randomExcuse = arrayOfExcuses[Math.floor(Math.random() * arrayOfExcuses.length)]
 
     const timelinePoints = [
-        "Tomorrow",
+        "2 days later",
         "1 Week",
         "1 Month",
         "3 Months",
@@ -69,7 +69,7 @@ function Results() {
                 <h2 className="labelOfStatistics" style={{ color: 'rgba(12, 171, 179, 0.6)' }}>If you start now</h2>
                 <div className="statistic-div">
                     <div className="time-wrapper-results">
-                        <div className="time-endpoints border-right">Tomorrow</div>
+                        <div className="time-endpoints border-right">Now</div>
                         <div className="time-endpoints border-right">1 Week</div>
                         <div className="time-endpoints border-right">1 Month</div>
                         <div className="time-endpoints border-right">3 Months</div>

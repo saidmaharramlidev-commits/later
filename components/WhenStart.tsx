@@ -28,7 +28,7 @@ function WhenStart() {
                     dispatch(setStep('whyStart'))
                     dispatch(setWhen(0))
                 }}>
-                    <p>Tomorrow</p>
+                    <p>2 days later</p>
                 </div>
                 <div className="time" onClick={() => {
                     dispatch(setStep('whyStart'))
